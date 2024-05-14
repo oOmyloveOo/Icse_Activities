@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: container;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    align-items: center;
+}
+div{
+    color:rgba(255, 255, 255, 0.3);
+}
+div:hover{
+    color: whitesmoke;
+
+}
+h1{
+    font-size: 80px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+h2{
+    font-size: 40px;
+    margin: 20px;
+}
+img{
+    height: 255px;
+}
+@keyframes container{
+    0% {background-color: crimson;}
+    20% {background-color:lightskyblue;}
+    40% {background-color: orange}
+    60% {background-color: turquoise}
+    80% {background-color: teal;}
+    100% {background-color: yellowgreen;}
+}
+.container{
+    text-align: center;
+}

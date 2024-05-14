@@ -1,0 +1,73 @@
+body{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction:column;
+    font-family: 'Luckiest Guy';
+    font-style: oblique;
+    background-color: yellow;
+}
+img{
+    position: relative;
+    bottom: -50px;
+    height: 50vh;
+}
+h1{
+    margin-top: 40px;
+}
+.yellow-monster {
+    color: rgb(127, 127, 0);
+    display: inline;
+}
+.violet-monster {
+    display: none;
+    color: rgb(127, 130, 127);
+}
+.red-monster {
+    display: none;
+    color: rgb(127, 0, 0);
+}
+.green-monster {
+    display: none;
+    color: rgb(0, 127, 0);
+}
+  @media only screen and (min-width: 129px) and (max-width: 512px) {
+    body {
+      background-color: red;
+    }
+    .violet-monster{
+        display: none ;
+    }
+    .red-monster{
+        display: inline;
+    }
+    .yellow-monster{
+        display: none;
+    }
+  }
+@media screen and (max-width: 128px) {
+    body{
+        background-color: green;
+    }
+    .violet-monster{
+        display: none;
+    }
+    .green-monster{
+        display: inline;
+    }
+    .yellow-monster{
+        display: none;
+    }
+}
+@media screen and (min-width: 513px) and (max-width: 720px){
+    body{
+        background-color: violet;
+    }
+    .yellow-monster{
+        display: none;
+    }
+    .violet-monster{
+        display: inline;
+    }
+}

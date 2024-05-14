@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+    <empleado id="101">
+        <nombre>Juan Pérez</nombre>
+        <edad>treinta</edad>
+        <departamento>Recursos Humanos</departamento>
+    </empleado>
+    <empleado id="102">
+        <nombre>Lucía Gómez</nombre>
+        <departamento>Finanzas</departamento>
+        <salario>45000</salario>
+    </empleado>
+    <empleado id="103">
+        <nombre>Carlos Ruiz</nombre>
+        <edad>41</edad>
+        <departamento>Ventas</departamento>
+    </empleado>
+</empleados>

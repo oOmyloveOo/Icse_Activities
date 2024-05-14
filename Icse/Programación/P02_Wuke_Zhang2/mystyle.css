@@ -1,0 +1,48 @@
+
+  body {
+    background-image: url(img/granos-cafe.jpg);
+    font-family: 'Comic sans MS';
+    padding: 15px;
+    padding-top: 50px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: auto;
+  }
+  p{
+    text-align: center;
+  }
+  .container {
+    width: 30%;
+    background-color: rgb(126, 192, 126);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+  }
+  .prices {
+    text-align: right;
+    width: 25%;
+  }
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  .products p {
+    display: inline-block;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 20px;
+  }
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  

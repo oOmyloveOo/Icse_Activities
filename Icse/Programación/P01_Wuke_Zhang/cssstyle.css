@@ -1,0 +1,34 @@
+*{
+    font-family: 'Comic sans MS';
+    text-align: center;
+    background-color: #5AA05D;
+    
+}
+
+h1{
+    font-size: 50px;
+}
+
+h2{
+    font-size: 40px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+    margin-top: -25px;
+}
+
+img{
+    width: 255px;
+    padding: auto;
+}
+
+body{
+    margin: auto;
+}

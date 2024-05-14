@@ -1,0 +1,57 @@
+
+body{
+    background-color: bisque;
+    margin: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.panel{
+    width: 512px;
+    height: 255px;
+    background-color: whitesmoke;
+    margin: 80px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 5px solid cornflowerblue;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 20px;
+    display: flex;
+    position: relative;
+}
+
+.panel_header{
+    width: 512px;
+    height: 30px;
+    background-color: cornflowerblue;
+}
+
+.panel_header p{
+    color: white;
+    margin-top: 0px;
+    margin-left: 25px;
+    padding-top: 5px;
+    position:absolute;
+    width:100%;
+}
+.container{
+    display: flex; 
+    flex-direction: column;
+    align-items:center;
+    width:100%;
+     min-height: 100vh;
+    justify-content:space-around;
+}
+@media only screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: row; 
+    }
+}
+

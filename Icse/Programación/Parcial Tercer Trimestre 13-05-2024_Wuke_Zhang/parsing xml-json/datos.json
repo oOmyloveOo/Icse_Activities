@@ -1,0 +1,22 @@
+{
+    "empleados": [
+        {
+            "id": 201,
+            "nombre": "Ana Torres",
+            "edad": 29,
+            "departamento": "Marketing"
+        },
+        {
+            "id": 202,
+            "nombre": "Miguel Ángel López",
+            "edad": 42,
+            "departamento": "IT"
+        },
+        {
+            "id": 203,
+            "nombre": "Sofía Martín",
+            "departamento": "Administración",
+            "salario": 35000
+        }
+    ]
+}

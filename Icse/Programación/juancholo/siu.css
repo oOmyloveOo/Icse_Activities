@@ -1,0 +1,59 @@
+div{
+    text-align: center;
+    width: 380px;
+    height: 400px;
+    padding: 50px;
+}
+.Jhonny{
+    background-color: blue;
+    margin-left: 20px;
+}
+.Messi{
+    background-color: green;
+    margin-right: 20px;
+}
+.Nacho{
+    background-color: aliceblue;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+body{
+    display: flex;
+    padding: 150px;
+    animation-name: container;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    align-items: center;
+    justify-content: center;
+}
+i{
+    font-size: 60px;
+}
+@keyframes container{
+    0% {background-color: crimson;}
+    20% {background-color:lightskyblue;}
+    40% {background-color: orange}
+    60% {background-color: turquoise}
+    80% {background-color: teal;}
+    100% {background-color: yellowgreen;}
+}
+@keyframes gradual {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .gradual {
+    animation: gradual 5s;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: center;
+    justify-content: center;
+  }
+  

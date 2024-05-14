@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+    <book>
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <year>1937</year>
+        <isbn>978-0-395-19395-8</isbn>
+    </book>
+    <book>
+        <title>One Hundred Years of Solitude</title>
+        <author>Gabriel García Márquez</author>
+        <year>1967</year>
+        <isbn>978-84-376-0494-7</isbn>
+    </book>
+    <book>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <year>1949</year>
+        <isbn>978-0-452-28423-4</isbn>
+    </book>
+    <book>
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <year>1813</year>
+        <isbn>978-84-17487-50-0</isbn>
+    </book>
+    <book>
+        <title>Don Quixote</title>
+        <author>Miguel de Cervantes</author>
+        <year>1605</year>
+        <isbn>978-84-670-4952-0</isbn>
+    </book>
+</library>

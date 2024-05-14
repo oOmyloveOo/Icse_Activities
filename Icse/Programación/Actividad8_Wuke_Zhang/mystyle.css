@@ -1,0 +1,77 @@
+body{
+    background-color: white;
+}
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+@keyframes darkslateblue{ 
+    to {background-color: darkslateblue;}
+}
+@keyframes orange{
+    to {background-color: orange;}
+}
+@keyframes crimson{
+    to {background-color: crimson;}
+}
+@keyframes gold{
+    to {background-color: gold;}
+}
+@keyframes chartreuse{
+    to {background-color: chartreuse;}
+}
+.darkslateblue:hover{
+    animation-play-state: running;
+}
+.orange:hover{
+    animation-play-state: running;
+}
+.crimson:hover{
+    animation-play-state: running;
+}
+.gold:hover{
+    animation-play-state: running;
+}
+.chartreuse:hover{
+    animation-play-state: running;
+}
+.darkslateblue{
+    animation-name: darkslateblue;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 1ms;
+}
+.orange{
+    animation-name: orange;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 1ms;
+}
+.crimson{
+    animation-name: crimson;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 1ms;
+}
+.gold{
+    animation-name: gold;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 1ms;
+}
+.chartreuse{
+    animation-name: chartreuse;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 1ms;
+}

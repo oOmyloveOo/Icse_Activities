@@ -1,0 +1,93 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B7F97;
+    height: 800px;
+    width: 550px;
+    border-radius: 10px 10px 70px 10px;
+}
+body{
+    background-color: #EE3038;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen {
+    width: 500px;
+    height: 400px;
+    background-color: #1B1A20;
+    position: relative;
+    top: -150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ground{
+    background-color: #9F9B02;
+    width: 350px;
+    height: 300px;
+    position: relative;
+    bottom: 30px;
+}
+.font{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 330px;
+    color: aqua;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  .button {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: 190px;
+      left: 250px;
+      background-color: #1B1A20;
+    }
+    .button2 {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 320px;
+        background-color: #1B1A20;
+      }
+    .rightarrow {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 150px;
+      right: 340px;
+      background-color: #1B1A20;
+    }
+    .leftarrow {
+      width: 80px;
+      height: 50px;
+      position: absolute;
+      top: 150px;
+      left: 30px;
+      background-color: #1B1A20;
+    }
+    .toparrow {
+      width: 50px;
+      height: 80px;
+      position: absolute;
+      top: 100px;
+      left: 10px;
+      background-color: #1B1A20;
+    }
+    .botarrow {
+      width: 50px;
+      height: 80px;
+      position: absolute;
+      top: 170px;
+      left: 10px;
+      background-color: #1B1A20;
+    }
+
+  

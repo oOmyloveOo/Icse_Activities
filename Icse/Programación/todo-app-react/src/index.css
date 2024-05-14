@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    background: #222;
+    color: aquamarine;
+    display: flex;
+    margin-top: 55px;
+    justify-content: center;
+    height: 99vh;
+}
+

@@ -1,0 +1,77 @@
+*{
+    text-align: center;
+    background-color: grey;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid grey ;
+    border-collapse: collapse;
+    animation-name: container;
+    animation-iteration-count: 1;
+}
+td{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+@keyframes whites{
+    to {background-color: white;}
+}
+@keyframes greys{
+    to {background-color: rgb(225, 138, 138)}
+}
+@keyframes crimson{
+    to {background-color: crimson;}
+}
+@keyframes gold{
+    to {background-color: gold;}
+}
+@keyframes chartreuse{
+    to {background-color: chartreuse;}
+}
+.crimson:hover{
+    animation-play-state: running;
+}
+.gold:hover{
+    animation-play-state: running;
+}
+.chartreuse:hover{
+    animation-play-state: running;
+}
+.whites:hover {
+    animation-play-state: running;
+  }
+.greys:hover{
+    animation-play-state: running;
+}
+.crimson{
+    animation-name: crimson;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 5s;
+}
+.gold{
+    animation-name: gold;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 5s;
+}
+.chartreuse{
+    animation-name: chartreuse;
+    animation-fill-mode: forwards;
+    animation-play-state: paused;
+    animation-duration: 5s;
+}
+.greys{
+    animation-fill-mode: forwards;
+    animation-name: greys;
+    animation-play-state: paused;
+    animation-duration: 5s;
+  }
+.whites{
+    animation-fill-mode: forwards;
+    animation-name: whites;
+    animation-play-state: paused;
+    animation-duration: 5s;
+  }

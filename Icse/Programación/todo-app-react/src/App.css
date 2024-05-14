@@ -1,0 +1,55 @@
+.task-section {
+    display: flex;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.task-text {
+    background: #222;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 250px;
+}
+
+.task-checkbox {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.to-do-list-title {
+    font-size: 5rem;
+    font-family: 'Comic Sans MS';
+    display: flex;
+    justify-content: center;
+}
+
+.task-text:hover {
+    filter: brightness(75%);
+}
+
+.trash-icon {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.task-button {
+    background: aliceblue;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 20px;
+    margin-left: 16px;
+    margin-top: 3em;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.task-button:hover {
+    background-color: gray;
+}
+
+.trash-icon:hover {
+    color: gray;
+}

@@ -1,0 +1,96 @@
+div {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 23%));
+    grid-auto-rows: minmax(100px, auto); 
+    gap: 40px 40px;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+  
+.box {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container > div:hover {
+    filter: brightness(55%);
+}
+
+body{
+    background-color: black;
+    padding: 1%;
+}
+
+.container > div{
+    border-radius: 5px;
+    height: 19vh;
+    border: 1px solid;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto); 
+    }
+    
+    .box {
+        width: 90%; 
+        max-width: 300px; 
+        height: auto; 
+        margin: 10px auto;
+    }
+}
+
+/* Clases de colores para beatbox */
+.box.red {
+    background-color: #FF4136; /* Rojo */
+}
+
+.box.blue {
+    background-color: #0074D9; /* Azul */
+}
+
+.box.green {
+    background-color: #2ECC40; /* Verde */
+}
+
+.box.yellow {
+    background-color: #FFDC00; /* Amarillo */
+}
+
+.box.orange {
+    background-color: #FF851B; /* Naranja */
+}
+
+.box.purple {
+    background-color: #B10DC9; /* Púrpura */
+}
+
+.box.pink {
+    background-color: #FF1493; /* Rosa */
+}
+
+.box.teal {
+    background-color: #39CCCC; /* Verde azulado */
+}
+
+.box.brown {
+    background-color: #A52A2A; /* Marrón */
+}
+
+.box.gray {
+    background-color: #AAAAAA; /* Gris */
+}
+
+.box.black {
+    background-color: #111111; /* Negro */
+}
+
+.box.white {
+    background-color: white;
+}

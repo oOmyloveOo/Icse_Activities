@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <nav class="flex justify-center bg-gray-200 p-28">
+            <div class="flex flex-col items-center flex-shrink-0 italic">            
+                <h1 id="myTitle" class="text-6xl font-semibold">[Title here]</h1>
+                <h3 id="mySubtitle" class="text-xl font-medium mt-4">[Subtitle here]</h3>
+            </div>
+        </nav>
+    </header>
+    <main>        
+        <div class="container mx-auto flex justify-center px-20 py-24 md:flex-row flex-col items-center">
+            <div class="px-40 flex flex-col items-center">            
+                <h1 class="font-medium text-2xl">Title</h1>
+                <p class="mt-2 whitespace-nowrap">This web site has no title, type something as title</p>
+                <input id="textInput1" autocomplete="off" type="text" class="border-2 border-gray-200 mt-4">
+                <button id="myButton1" class="bg-blue-500 border rounded text-lg text-white py-2 px-4 mt-4 hover:bg-blue-900">
+                    Set
+                </button>
+            </div>
+            <div class="px-40 flex flex-col items-center">
+                <h1 class="font-medium text-2xl">Subtitle</h1>
+                <p class="mt-2 whitespace-nowrap">This web site has no subtitle, type something as subtitle</p>
+                <input id="textInput2" autocomplete="off" type="text" class="border-2 border-gray-200 mt-4">
+                <button id="myButton2" class="bg-blue-500 border rounded text-lg text-white py-2 px-4 mt-4 hover:bg-blue-900">
+                    Set
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

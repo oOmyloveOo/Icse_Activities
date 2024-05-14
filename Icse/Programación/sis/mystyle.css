@@ -1,0 +1,27 @@
+.red{
+    background-color: red;
+    top: 200px;
+}
+.pink{
+    background-color: pink;
+    left: 50px;
+}
+.green{
+    background-color: green;
+    right: 60px;
+}
+.blue{
+    background-color: blue;
+    bottom: 180px;
+}
+.grey{
+    background-color: grey;
+}
+.brown{
+    background-color: brown;
+}
+div{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
