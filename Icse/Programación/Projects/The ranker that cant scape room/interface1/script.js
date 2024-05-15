@@ -11,7 +11,3 @@ function showPrev(currentContentId, prevContentId) {
   currentContent.style.display = "none";
   prevContent.style.display = "block";
 }
-
-function showPlay() {
-  // Aquí puedes agregar la lógica para reproducir algo si es necesario
-}
