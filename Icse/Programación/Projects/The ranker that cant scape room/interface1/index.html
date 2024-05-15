@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mystyle.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <video id="video-bg" autoplay muted loop>
+    <source src="img/Ruins.mp4" type="video/mp4">
+  </video>
+
+  <div id="content1" class="content">
+    <p>Yo, Jhosefer Franz solía ser un tranquilo profesor de informática en una pequeña ciudad. Sin embargo, detrás de
+      su apariencia ordinaria, ardía una pasión por el misterio y la aventura. Pasaba horas perdido en libros antiguos y
+      leyendas olvidadas, soñando con descubrir secretos ocultos en el mundo.</p>
+    <button onclick="showNext('content1', 'content2')">Next</button>
+  </div>
+
+  <div id="content2" class="content" style="display: none;">
+    <p> Un día, mientras navegaba por la red, me tropecé con una leyenda fascinante sobre ruinas ancestrales emergiendo
+      en algún lugar remoto del mundo. Mis ojos brillaron con la promesa de tesoros perdidos y artefactos antiguos
+      esperando ser descubiertos. Sin pensarlo dos veces, dejé atrás mi vida cotidiana y me lancé hacia lo desconocido
+      en busca de
+      emociones y aventuras.</p>
+    <button onclick="showPrev('content2', 'content1')">Return</button>
+    <button onclick="showNext('content2', 'content3')">Next</button>
+  </div>
+
+  <div id="content3" class="content" style="display: none;">
+    <p> Pero su ambición lo llevó a la trampa mortal de la Scape Room. Ahora, Jhosefer se encuentra atrapado junto con
+      otros aventureros, enfrentando desafíos mortales dónde desgraciadamente murieron y ahora solo le queda enigmas
+      intrincados en su lucha por la supervivencia. Con su conocimiento en informática y su pasión por descubrir
+      misterios, Jhosefer se alza en la
+      búsqueda de la verdad detrás de las ruinas.</p>
+    <button onclick="showPrev('content3', 'content2')">Return</button>
+    <button onclick="showPlay()">Play</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
