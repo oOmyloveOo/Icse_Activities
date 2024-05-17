@@ -24,10 +24,10 @@ html {
 
 .overlay {
   position: absolute;
-  top: 13vh;
+  top: 15vh;
   left: 3em;
   width: 20vw;
-  color: white;
+  color: whitesmoke;
   font-size: 23px;
   text-align: justify;
   display: flex;
@@ -46,4 +46,11 @@ html {
 .window {
   width: 30vw;
   height: 80vh;
+}
+
+i {
+  font-size: 1.7vw;
+  position: relative;
+  left: 160px;
+  color: whitesmoke;
 }
