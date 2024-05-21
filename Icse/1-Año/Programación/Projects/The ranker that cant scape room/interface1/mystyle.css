@@ -1,8 +1,36 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 #video-bg{
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
 }
 
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 30vw;
+}
+
+.content {
+  width: 30vw;
+  color: white;
+  position: absolute;
+  text-align: center;
+}
+
+.window {
+  width: 100%;
+  height: 100%;
+}
