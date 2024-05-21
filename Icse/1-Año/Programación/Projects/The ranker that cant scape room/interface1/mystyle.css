@@ -1,56 +1,8 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#video-bg {
+#video-bg{
   position: fixed;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
 }
 
-.content {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 15vh;
-  left: 3em;
-  width: 20vw;
-  color: whitesmoke;
-  font-size: 23px;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.overlay button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-.window {
-  width: 30vw;
-  height: 80vh;
-}
-
-i {
-  font-size: 1.7vw;
-  position: relative;
-  left: 160px;
-  color: whitesmoke;
-}
