@@ -6,8 +6,6 @@ html, body {
 
 #video-bg{
   position: fixed;
-  right: 0;
-  bottom: 0;
   width: 100vw;
   height: 100vh;
   z-index: -1;
@@ -19,18 +17,35 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
-  width: 30vw;
+  text-align: center;
 }
 
 .content {
+  position: relative;
   width: 30vw;
+  height: 80vh;
   color: white;
-  position: absolute;
-  text-align: center;
 }
 
 .window {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 0;
+}
+
+.content i,
+.content p,
+.content button {
+  position: relative;
+  z-index: 0;
+  top: 100px;
+  text-align: justify;
+}
+.content p{
+  width: 70%;
+  margin: 0 15%;
+  margin-top: 60px;
 }
