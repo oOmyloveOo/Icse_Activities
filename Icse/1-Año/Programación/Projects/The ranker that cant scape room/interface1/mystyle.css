@@ -43,9 +43,63 @@ html, body {
   z-index: 0;
   top: 100px;
   text-align: justify;
+  font-size: 1.5vw;
 }
 .content p{
   width: 70%;
   margin: 0 15%;
-  margin-top: 60px;
+  margin-top: 30px;
 }
+
+.icon-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#icon {
+  font-size: 2vw;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 70px;
+}
+
+.content button {
+  z-index: 0;
+  top: 130px; 
+  padding: 2%;
+  color: rgb(158, 158, 246);
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 0px 10px rgb(158, 158, 246) inset,
+              10px 7px 10px #0006;
+  cursor: pointer;
+}
+
+.button-text {
+  display: inline-block;
+  transition: opacity 0.3s ease-out;
+}
+
+.next-button .icon {
+  opacity: 99;
+  position: absolute;
+  top: 25%;
+  left: -100%;
+  transition: left 0.3s ease-out;
+}
+
+.next-button:hover .icon {
+  left: 35%;
+  color: white;
+  opacity: 1;
+}
+
+.next-button:hover .button-text {
+  opacity: 0;
+}
+
+.next-button:hover{
+  background-color: rgb(158, 158, 246);
+}
+
