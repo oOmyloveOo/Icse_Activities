@@ -82,24 +82,24 @@ html, body {
   transition: opacity 0.3s ease-out;
 }
 
-.next-button .icon {
+.nextButton .icon {
   position: absolute;
   top: 25%;
   left: -30%;
   transition: left 1s ease-out;
 }
 
-.next-button:hover .icon {
+.nextButton:hover .icon {
   left: 35%;
   color: white;
   opacity: 1;
 }
 
-.next-button:hover .button-text {
+.nextButton:hover .button-text {
   visibility: hidden;
 }
 
-.content .next-button::before {
+.content .nextButton::before {
   content: '';
   position: absolute;
   top: 0;
@@ -146,3 +146,6 @@ html, body {
   left: 0;
 }
 
+.container.hidden {
+  display: none;
+}
