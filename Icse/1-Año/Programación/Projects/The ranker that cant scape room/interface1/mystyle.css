@@ -4,7 +4,7 @@ html, body {
   overflow: hidden;
 }
 
-#video-bg{
+#video-bg {
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -12,7 +12,7 @@ html, body {
   object-fit: cover;
 }
 
-.container{
+.container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -45,7 +45,8 @@ html, body {
   text-align: justify;
   font-size: 1.5vw;
 }
-.content p{
+
+.content p {
   width: 70%;
   margin: 0 15%;
   margin-top: 30px;
@@ -62,11 +63,17 @@ html, body {
   cursor: pointer;
   margin-top: 20px;
   margin-right: 70px;
+  transition: background-color 0.3s ease;
+}
+
+#icon:hover{
+  box-shadow: 10px 10px 15px rgb(36, 34, 34);
+  color: rgb(226, 226, 253);
 }
 
 .content button {
   z-index: 0;
-  top: 130px; 
+  top: 130px;
   padding: 2%;
   color: rgb(158, 158, 246);
   background-color: #fff;
@@ -114,24 +121,24 @@ html, body {
   right: 0;
 }
 
-.return-button .icon {
+.returnButton .icon {
   position: absolute;
   top: 25%;
   right: -30%;
   transition: right 1s ease-out;
 }
 
-.return-button:hover .icon {
+.returnButton:hover .icon {
   right: 35%;
   color: white;
   opacity: 1;
 }
 
-.return-button:hover .button-text {
+.returnButton:hover .button-text {
   visibility: hidden;
 }
 
-.content .return-button::before {
+.content .returnButton::before {
   content: '';
   position: absolute;
   top: 0;
@@ -142,10 +149,16 @@ html, body {
   transition: left 0.5s ease-out;
 }
 
-.return-button:hover::before {
+.returnButton:hover::before {
   left: 0;
 }
 
 .container.hidden {
   display: none;
 }
+
+.playButton:hover {
+  box-shadow: 0px 0px 30px rgb(158, 158, 246) inset,
+              10px 10px 15px rgb(36, 34, 34);
+}
+

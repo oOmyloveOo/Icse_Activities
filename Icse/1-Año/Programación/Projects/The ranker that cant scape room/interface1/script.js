@@ -1,34 +1,35 @@
-// Función para mostrar el siguiente contenedor y ocultar el actual
 function showNextOnClick(nextButton) {
-    // Encontrar el contenedor padre del botón
-    const container = nextButton.closest('.container');
-    
-    // Ocultar el contenedor actual
+    let container = nextButton.closest('.container');
     container.classList.add('hidden');
-    
-    // Encontrar el siguiente contenedor
-    const nextContainer = container.nextElementSibling;
-    
-    // Si existe un siguiente contenedor, mostrarlo
+    let nextContainer = container.nextElementSibling;
     if (nextContainer) {
       nextContainer.classList.remove('hidden');
     } else {
-      // Si no hay un siguiente contenedor, volver al primer contenedor
       document.querySelector('.container').classList.remove('hidden');
     }
   }
-  
-  // Obtener todos los botones con la clase 'nextButton'
-  const nextButtons = document.querySelectorAll('.nextButton');
-  
-  // Agregar un event listener a cada botón 'Next'
+  let nextButtons = document.querySelectorAll('.nextButton');
   nextButtons.forEach(button => {
     button.addEventListener('click', () => {
       showNextOnClick(button);
     });
   });
 
-
-function Return(){
-    
-}
+  function Return(returnButton) {
+    let container = returnButton.closest('.container');
+    container.classList.add('hidden');
+    let previousContainer = container.previousElementSibling;
+    if (previousContainer) {
+      previousContainer.classList.remove('hidden');
+    } else {
+      let containers = document.querySelectorAll('.container');
+      containers[containers.length - 1].classList.remove('hidden');
+    }
+  }
+  let returnButtons = document.querySelectorAll('.returnButton');
+  returnButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      Return(button);
+    });
+  });
+  

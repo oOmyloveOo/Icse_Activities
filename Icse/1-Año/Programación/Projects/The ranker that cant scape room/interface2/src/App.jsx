@@ -6,12 +6,13 @@ export function App(){
       <main>
         <div>
             <img src="img/ruby.png" className='ruby'/>
-            <img src="img/chest.png" className='chest'/>
-            <img src="img/door_lock.png" className='door-lock'/>
+            <img src="img/closed_chest.png" className='closedChest'/>
             <img src="img/key.png" className='key'/>
             <img src="img/skulls.png" className='skulls'/>
             <img src="img/sheet.png" className='sheet'/>
             <img src="img/door.png" className='door'/>
+            <img src="img/potion.png" className='potion'/>
+            <img src="img/hangKeys.png" className='hangKeys'/>
         </div>
       </main>)
 }
