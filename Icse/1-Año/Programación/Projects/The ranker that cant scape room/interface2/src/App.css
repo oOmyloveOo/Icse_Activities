@@ -1,0 +1,30 @@
+.ruby{
+    width: 3%;
+}
+
+.chest{
+    width: 20%;
+}
+
+.door-lock{
+    width: 2%;
+}
+
+.key{
+    width: 5%;
+}
+
+.door{
+    width: 10%;
+    position: relative;
+    right: 6vw;
+    top: 30vh;
+}
+
+.sheet{
+    width: 6%;
+}
+
+.skulls{
+    width: 15%;
+}

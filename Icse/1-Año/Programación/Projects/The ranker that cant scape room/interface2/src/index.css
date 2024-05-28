@@ -1,3 +1,8 @@
-body{
-    background-image: url('Room_emptyroom.png');
+body {
+  background-image: url("/img/Room_emptyroom.png");
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
