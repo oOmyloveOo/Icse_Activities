@@ -1,59 +1,69 @@
 .ruby{
     width: 3%;
-    position: relative;
+    position: absolute;
     left: 55vw;
-    top: 50vh;
+    top: 70vh;
     visibility: hidden;
+    cursor: pointer;
 }
 
-.closedChest{
-    width: 10%;
+.chest-container {
     position: relative;
+    width: 10%;
     left: 75vw;
-    top: 55vh;
+    top: 60vh;
+    cursor: pointer;
+}
+
+.closedChest, .chest-video {
+    width: 100%;
 }
 
 .key{
     width: 5%;
-    position: relative;
-    top: 36vh;
-    left: 11vw;
+    position: absolute;
+    top: 50vh;
+    left: 25vw;
     z-index: 1;
+    cursor: pointer;
 }
 
 .door{
     width: 6.5%;
-    position: relative;
-    left: 6vw;
-    top: 40vh;
+    position: absolute;
+    left: 46vw;
+    top: 51.5vh;
 }
 
 .sheet{
     width: 6%;
-    position: relative;
-    top: 50vh;
-    left: 30vw;
+    position: absolute;
+    top: 65vh;
+    left: 60vw;
     visibility: hidden;
+    cursor: pointer;
 }
 
 .skulls{
     width: 15%;
-    position: relative;
-    top: 60vh;
-    right: 5vw;
+    position: absolute;
+    top: 70vh;
+    right: 75vw;
 }
 
 .potion{
     width: 5%;
-    position: relative;
-    left: 20vw;
-    top: 65vh;
+    position: absolute;
+    left: 58vw;
+    top: 77vh;
     visibility: hidden;
+    cursor: pointer;
 }
 
 .hangKeys{
     width: 400px;
-    position: relative;
-    right: 45vw;
+    position: absolute;
+    right: 68vw;
     top: 35vh;
 }
+
