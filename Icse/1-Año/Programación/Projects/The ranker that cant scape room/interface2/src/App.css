@@ -8,14 +8,14 @@
 }
 
 .chest-container {
-    position: relative;
+    position: absolute;
     width: 10%;
     left: 75vw;
-    top: 60vh;
+    top: 65%;
     cursor: pointer;
 }
 
-.closedChest, .chest-video {
+.closedChest, .chest-video, .openedChestImage {
     width: 100%;
 }
 
@@ -29,10 +29,10 @@
 }
 
 .door{
-    width: 6.5%;
+    width: 7%;
     position: absolute;
     left: 46vw;
-    top: 51.5vh;
+    top: 54%;
 }
 
 .sheet{
@@ -67,3 +67,23 @@
     top: 35vh;
 }
 
+.iframe-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .iframe-content {
+    width: 80%;
+    height: 80%;
+    border: none;
+    border-radius: 10px;
+  }
+  
