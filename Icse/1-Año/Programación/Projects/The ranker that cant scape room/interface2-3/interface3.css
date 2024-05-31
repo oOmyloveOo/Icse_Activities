@@ -1,0 +1,15 @@
+.shadow-inner-white {
+    box-shadow: inset 0px 0px 15px rgb(238, 238, 238);
+  }
+
+/* custom.css */
+
+.shadow-outside {
+    box-shadow: -5px 0px 6px #0000ff,
+     5px 0px 4px blue, 
+     0px 5px 6px rgb(130, 130, 246),
+     0px -3px 6px rgb(115, 115, 246);  
+  }
+  
+  
+  

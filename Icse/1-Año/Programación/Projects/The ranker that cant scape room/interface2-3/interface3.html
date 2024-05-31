@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="interface3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col min-h-screen bg-white">
+<body class="flex flex-col min-h-screen bg-black text-white">
   <main class="flex-grow flex items-center justify-center">
-      <div class="border-2 border-blue-400 w-64 p-5 bg-blue-600 shadow-lg">
-        <h1 class="text-3xl font-bold underline mb-10">
-          Enhorabuena jugador.
+    <div class="bg-blue-600 p-5 border-2 border-solid border-blue-400 shadow-inner-white shadow-outside">
+      <div class="bg-blue-400 p-2 text-center flex items-center justify-center shadow-inner-white">
+        <i class="fa-solid fa-circle-exclamation mr-2 text-2xl"></i>
+        <h1 class="text-2xl font-bold">ALERTA</h1>
+      </div>
+      <div class="w-64 mt-8">
+        <h1 class="text-2xl font-bold mb-10 text-center">
+          [Enhorabuena,<span class="text-yellow-500">jugador.]</span>
         </h1>
         <p>
           Has superado la prueba del sistemma, 
           ahora eres un ranker 
           elegido por el sistema.
         </p>
-        <button class="bg-blue-500 rounded">
-          Continuará...
-        </button>
+        <div class="text-center">
+          <button class="bg-blue-500 rounded p-2 mt-5 shadow-inner-white">
+            Continuará...
+          </button>
+        </div>
       </div>
+    </div>
   </main>
-  <footer class="flex justify-center space-x-4 p4 mb-4">
+  <footer class="flex justify-center space-x-4 p-4 mb-4 text-blue-500">
     <i class="fa-brands fa-github text-4xl"></i>
     <i class="fa-brands fa-linkedin text-4xl"></i>
     <i class="fa-brands fa-paypal text-4xl"></i>
