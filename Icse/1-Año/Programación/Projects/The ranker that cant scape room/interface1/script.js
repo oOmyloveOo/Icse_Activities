@@ -33,3 +33,26 @@ function showNextOnClick(nextButton) {
     });
   });
   
+  document.addEventListener("DOMContentLoaded", function() {
+    const contentContainers = document.querySelectorAll(".content");
+    fetch("info.xml")
+      .then(response => response.text())
+      .then(xml => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xml, "text/xml");
+        const textos = xmlDoc.querySelector("textos");
+        const textosArray = Array.from(textos.children);
+        textosArray.forEach((texto, index) => {
+          const paragraph = contentContainers[index].querySelector("p");
+          if (paragraph) {
+            paragraph.textContent = texto.textContent;
+          }
+        });
+      })
+      .catch(error => {
+        console.error("Error al cargar el archivo XML:", error);
+      });
+  });
+  
+  
+  

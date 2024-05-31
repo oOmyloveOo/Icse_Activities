@@ -64,7 +64,6 @@ export function App() {
           setDoorClosed={setDoorClosed}
           setShowIframe={setShowIframe}
         />{" "}
-        {/* Pasa el nuevo estado al componente ScapeRoom */}
         <img
           src="img/potion.png"
           className="potion"
@@ -77,9 +76,9 @@ export function App() {
           }}
         />
         <img src="img/hangKeys.png" className="hangKeys" />
+        <img src="img/torch.png" className="torch" />
       </div>
       {showIframe && <IframeOverlay />}{" "}
-      {/* Renderiza el iframe si showIframe es true */}
     </main>
   );
 }
@@ -136,13 +135,12 @@ export function OpenChest({
 }
 
 export function ScapeRoom({ mapPicked, setDoorClosed, setShowIframe }) {
-  // Recibe setShowIframe como prop
   const handleDoorClick = () => {
     if (mapPicked) {
       const code = prompt("Introduce el código del mapa:");
       if (code === "1234") {
         setDoorClosed(false);
-        setShowIframe(true); // Muestra el iframe
+        setShowIframe(true);
         alert("La puerta se ha abierto, ¡has escapado!");
       } else {
         alert("Código incorrecto, intenta de nuevo.");
@@ -165,7 +163,7 @@ export function ScapeRoom({ mapPicked, setDoorClosed, setShowIframe }) {
 function IframeOverlay() {
   return (
     <div className="iframe-overlay">
-      <iframe src="http://127.0.0.1:5500/Icse/1-A%C3%B1o/Programaci%C3%B3n/Projects/The%20ranker%20that%20cant%20scape%20room/interface3/congratulations.html" className="iframe-content"></iframe>
+      <iframe src="./interface3.html" className="iframe-content"></iframe>
     </div>
   );
 }

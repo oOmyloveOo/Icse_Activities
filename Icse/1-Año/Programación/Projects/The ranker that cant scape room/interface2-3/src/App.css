@@ -61,10 +61,17 @@
 }
 
 .hangKeys{
-    width: 400px;
+    width: 30%;
     position: absolute;
     right: 68vw;
-    top: 35vh;
+    top: 31vh;
+}
+
+.torch{
+    width: 5%;
+    position: absolute;
+    left: 65vw;
+    top: 52vh;
 }
 
 .iframe-overlay {
@@ -81,7 +88,7 @@
   }
   
   .iframe-content {
-    width: 80%;
+    width: 50%;
     height: 80%;
     border: none;
     border-radius: 10px;
