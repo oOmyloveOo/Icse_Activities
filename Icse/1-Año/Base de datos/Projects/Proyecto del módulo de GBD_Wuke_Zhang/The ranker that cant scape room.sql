@@ -1,27 +1,26 @@
 CREATE DATABASE TheRankerThatCantScapeRoom;
 
 CREATE TABLE Ranker (
-    Ranker_ID INT PRIMARY KEY,
-    Name VARCHAR(50),
+    Id_Ranker INT PRIMARY KEY,
+    Name VARCHAR(15),
     Level INT,
-    Experience INT
+    Job VARCHAR(20)
 );
 
 CREATE TABLE Dungeon (
     Dungeon_ID INT PRIMARY KEY,
-    Name VARCHAR(50),
-    Difficulty VARCHAR(20),
-    Capacity INT
+    Name VARCHAR(15),
+    Difficulty VARCHAR(15),
+    Capacity INT,
+    FOREIGN KEY (Ranker_Id) REFERENCES Ranker(Id_Ranker)
 );
 
 CREATE TABLE Status_Window (
     Status_Window_ID INT PRIMARY KEY,
-    Ranker_ID INT,
-    Dungeon_ID INT,
+    Ranker_Id INT,
     Status VARCHAR(20),
     Time_taken INT,
-    FOREIGN KEY (Ranker_ID) REFERENCES Ranker(Ranker_ID) ON DELETE CASCADE,
-    FOREIGN KEY (Dungeon_ID) REFERENCES Dungeon(Dungeon_ID) ON DELETE SET NULL
+    FOREIGN KEY (Ranker_Id) REFERENCES Ranker(Id_Ranker),
 );
 
 CREATE TABLE Item (
@@ -43,8 +42,8 @@ CREATE TABLE Dungeon_Item (
     Dungeon_ID INT,
     Item_ID INT,
     PRIMARY KEY (Dungeon_ID, Item_ID),
-    FOREIGN KEY (Dungeon_ID) REFERENCES Dungeon(Dungeon_ID),
-    FOREIGN KEY (Item_ID) REFERENCES Item(Item_ID)
+    FOREIGN KEY (Dungeon_ID) REFERENCES Dungeon(Dungeon_ID) ON DELETE SET NULL,
+    FOREIGN KEY (Item_ID) REFERENCES Item(Item_ID) ON DELETE CASCADE
 );
 
 CREATE TABLE Quest (
