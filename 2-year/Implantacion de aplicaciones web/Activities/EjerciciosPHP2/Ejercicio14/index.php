@@ -1,6 +1,6 @@
 <?php 
 require_once 'includes/header.php';  // Incluye el encabezado
-require_once 'includes/functionHTML.php';  // Incluye la función para generar el formulario
+require_once 'includes/functions/functionHTML.php';  // Incluye la función para generar el formulario
 ?>
 
 <h1>Formulario de Registro</h1>

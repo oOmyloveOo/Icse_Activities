@@ -19,18 +19,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "El email no es válido.";
     }
 
-    // Puedes procesar los demás datos de manera similar
-
-    // Aquí se podrían procesar otros campos o realizar una acción como guardar los datos en una base de datos.
 }
 
 ?>
 
 <h1>Formulario de Registro</h1>
 <?php
-    echo generarFormulario();  // Muestra nuevamente el formulario
+    echo generarFormulario(); 
 ?>
 
 <?php 
-require_once 'includes/footer.php';  // Incluye el pie de página
+require_once 'includes/footer.php';  
 ?>
