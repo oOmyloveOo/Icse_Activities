@@ -1,39 +1,41 @@
 <?php
+// Primero mostramos errores para debugging
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Incluimos la conexión a la base de datos con la ruta correcta
 require_once 'includes/db/connect.php';
 
-$sql = "
-    CREATE TABLE IF NOT EXISTS users (
+// Creamos la base de datos si no existe
+$sql_database = "CREATE DATABASE IF NOT EXISTS mi_base_datos";
+if ($db->query($sql_database)) {
+    echo "Base de datos creada o ya existente.<br>";
+    
+    // Seleccionamos la base de datos
+    $db->select_db("mi_base_datos");
+    
+    // Creamos la tabla users
+    $sql_table = "CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
         nombre VARCHAR(50) NOT NULL,
         apellidos VARCHAR(50) NOT NULL,
-        email VARCHAR(100) UNIQUE NOT NULL,
-        password VARCHAR(255) NOT NULL,
-        bio TEXT,
-        rol VARCHAR(20),
-        imagen VARCHAR(255)
-    )
-";
+        bio TEXT NOT NULL,
+        email VARCHAR(100) NOT NULL UNIQUE,
+        password VARCHAR(64) NOT NULL,
+        rol VARCHAR(20) NOT NULL,
+        imagen VARCHAR(255),
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )";
 
-if ($db->query($sql)) {
-    echo "Tabla 'users' creada o ya existe.<br>";
+    if ($db->query($sql_table)) {
+        echo "Tabla 'users' creada correctamente.<br>";
+    } else {
+        echo "Error al crear la tabla: " . $db->error . "<br>";
+    }
 } else {
-    echo "Error creando tabla: " . $db->error;
+    echo "Error al crear la base de datos: " . $db->error . "<br>";
 }
-
-// Insertar registros
-$insert_sql = "
-    INSERT INTO users (nombre, apellidos, email, password, bio, rol, imagen) VALUES
-    ('John', 'Doe', 'john.doe@example.com', SHA1('password1'), 'Bio de John', 'admin', NULL),
-    ('Jane', 'Smith', 'jane.smith@example.com', SHA1('password2'), 'Bio de Jane', 'user', NULL),
-    ('Alice', 'Johnson', 'alice.johnson@example.com', SHA1('password3'), 'Bio de Alice', 'editor', NULL),
-    ('Bob', 'Brown', 'bob.brown@example.com', SHA1('password4'), 'Bio de Bob', 'user', NULL)
-";
-
-if ($db->query($insert_sql)) {
-    echo "Registros insertados correctamente.<br>";
-} else {
-    echo "Error al insertar registros: " . $db->error;
-}
-
-$db->close();
 ?>
+
+<p><a href="index.php">Volver al inicio</a></p>

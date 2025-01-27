@@ -1,6 +1,6 @@
 <!-- includes/connect.php -->
 <?php
-$server = "localhost"; // Cambia si tienes otro servidor
+$server = "localhost:3307"; // Tener en cuenta el puerto
 $username = "root";    // Cambia según tu usuario de MySQL
 $password = "";        // Cambia según la contraseña de MySQL
 $database = "mi_base_datos"; // Cambia por el nombre de tu base de datos
