@@ -1,5 +1,5 @@
 <?php
-$server = "localhost:3307"; // Tener en cuenta el puerto
+$server = "localhost:3306"; // Tener en cuenta el puerto
 $username = "root";    // Cambia según tu usuario de MySQL
 $password = "";        // Cambia según la contraseña de MySQL
 $database = "mi_base_datos"; // Cambia por el nombre de tu base de datos
